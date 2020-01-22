@@ -1,0 +1,5 @@
+require('prototypes.item')
+require('prototypes.other')
+require('prototypes.recipe')
+require('prototypes.entity')
+--table.insert(fluid-handling.effect, { type = "unlock-recipe", recipe =storage-tank9 })

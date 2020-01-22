@@ -1,0 +1,11 @@
+{
+  "name": "ffff",
+  "version": "0.0.2",
+  "title": "12 way tank",
+  "author": "immortal_sniper1",
+  "contact": "zerefulquirra@gmail.com",
+  "factorio_version": "0.18",
+  "dependencies": ["base >= 0.18"],
+  "homepage": "none",
+  "description": "Adds a  fluid tank with 9 exits"
+}
