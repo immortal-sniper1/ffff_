@@ -1,23 +1,24 @@
 
 
 
-
+-- local hit_effects = require ("__base__/prototypes.entity.demo-hit-effects")
 
 data:extend({
 
-
-
+  
   {
     type = "storage-tank",
     name = "storage-tank9",
     icon = "__base__/graphics/icons/storage-tank.png",
-    icon_size = 64,
+    icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 2, result = "storage-tank9"},
-    max_health = 750,
-    corpse = "medium-remnants",
+    minable = {mining_time = 0.5, result = "storage-tank9"},
+    max_health = 500,
+    corpse = "storage-tank-remnants",
+    dying_explosion = "storage-tank-explosion",
     collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+   -- damaged_trigger_effect = hit_effects.entity(),
     fluid_box =
     {
       base_area = 250,
@@ -146,7 +147,7 @@ data:extend({
       }
     },
     flow_length_in_ticks = 360,
-    vehicle_impact_sound = generic_impact_sound(),
+   -- vehicle_impact_sound = sounds.generic_impact,
     working_sound =
     {
       sound =
@@ -178,6 +179,7 @@ data:extend({
       orientation_to_variation = false
     }
   },
+
 
 
 
